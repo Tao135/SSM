@@ -3,6 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"/>
+    <!--
+        id是指bean的标识
+        class是指bean的全限定名称
+        scope是调整bean属于单例或者多例，默认为singleton单例模式，即创建的多个bean都属于同一个地址；prototype表示多例模式
+    -->
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl" scope="prototype"/>
 
 </beans>
