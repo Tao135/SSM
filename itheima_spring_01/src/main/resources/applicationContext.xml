@@ -10,6 +10,31 @@
         init-method指bean初始化时将执行的方法
         destroy-method指当bean销毁时执行的方法
     -->
-    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl" scope="prototype" init-method="init" destroy-method="end" />
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl">
+        <!--
+            property中name
+            ref是 对象注入
+            value是简单类型注入
+        -->
+        <property name="username" value="玲"/>
+        <property name="age" value="16"/>
 
+        <!--
+            当引用的是集合类型时，用对应的集合标签,list,map,property,集合引用的值是简单类型时用value，引用类型用ref
+            <map><entry key="1" value-ref="m1"/></map>
+            <property name="properties"><props key="p1" value="aaa"/></property>
+        -->
+
+        <property name="strList">
+            <list>
+                <value>a</value>
+                <value>b</value>
+                <value>c</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="userService" class="com.itheima.service.impl.UserServiceImpl" >
+        <property name="userDao" ref="userDao" />
+    </bean>
 </beans>

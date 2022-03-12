@@ -1,4 +1,4 @@
-package com.itheima.dao.demo;
+package com.itheima.demo;
 
 import com.itheima.dao.UserDao;
 import org.springframework.context.ApplicationContext;
