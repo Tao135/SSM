@@ -6,8 +6,10 @@
     <!--
         id是指bean的标识
         class是指bean的全限定名称
-        scope是调整bean属于单例或者多例，默认为singleton单例模式，即创建的多个bean都属于同一个地址；prototype表示多例模式
+        scope是调整bean属于单例或者多例，默认为singleton单例模式，即创建的多个bean都属于同一个地址；
+        init-method指bean初始化时将执行的方法
+        destroy-method指当bean销毁时执行的方法
     -->
-    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl" scope="prototype"/>
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl" scope="prototype" init-method="init" destroy-method="end" />
 
 </beans>
