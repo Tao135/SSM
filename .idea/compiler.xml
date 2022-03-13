@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="itheima_spring" />
+        <module name="itheima_spring_ioc_anno" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="itheima_spring" target="1.5" />
+      <module name="itheima_spring_ioc_anno" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
