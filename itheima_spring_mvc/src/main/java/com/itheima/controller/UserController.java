@@ -7,12 +7,14 @@ import com.itheima.domain.Vo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.xml.ws.spi.http.HttpHandler;
+import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Date;
@@ -21,6 +23,29 @@ import java.util.List;
 
 @Controller
 public class UserController {
+
+    @RequestMapping("/quick22")
+    @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写
+    //文件上传，形参需要与jsp传的name参数一致
+    public void save22(String username, MultipartFile[] upload) throws Exception{
+        System.out.println(username);
+        for (MultipartFile multipartFile : upload) {
+            String originalFilename = multipartFile.getOriginalFilename();
+            multipartFile.transferTo(new File("D:\\QQ\\"+originalFilename));
+        }
+    }
+
+    @RequestMapping("/quick21")
+    @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写
+    //文件上传，形参需要与jsp传的name参数一致
+    public void save21(String username, MultipartFile upload) throws Exception{
+        System.out.println(username);
+        //获得上传文件的名称
+        String originalFilename = upload.getOriginalFilename();
+        upload.transferTo(new File("D:\\QQ\\" + originalFilename));         //将文件上传至指定目录
+        String originalFilename2 = upload.getOriginalFilename();
+        upload.transferTo(new File("D:\\QQ\\" + originalFilename2));         //将文件上传至指定目录
+    }
 
     @RequestMapping("/quick20")
     @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写
