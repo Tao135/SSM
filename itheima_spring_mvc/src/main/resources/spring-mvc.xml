@@ -33,4 +33,7 @@
 
     <!--mvc的注解驱动-->
     <mvc:annotation-driven/>
+
+    <!--开发资源的访问-->
+    <mvc:resources mapping="/js/**" location="/js/"/>
 </beans>

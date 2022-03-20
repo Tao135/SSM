@@ -4,6 +4,9 @@ public class User {
     private int age;
     private String username;
 
+    public User(){
+    }
+
     public int getAge() {
         return age;
     }
