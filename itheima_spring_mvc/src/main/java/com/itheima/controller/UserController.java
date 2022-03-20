@@ -6,20 +6,63 @@ import com.itheima.domain.User;
 import com.itheima.domain.Vo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.xml.ws.spi.http.HttpHandler;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 
 @Controller
 public class UserController {
+
+    @RequestMapping("/quick20")
+    @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写
+    //获取Cookie，value的值要与网页的参数一致
+    public void save20(@CookieValue(value = "JSESSIONID") String jseesionId) {
+        System.out.println(jseesionId);
+    }
+
+    @RequestMapping("/quick19")
+    @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写
+    //获取请求头,value要与网页的参数一致
+    public void save19(@RequestHeader(value = "User-Agent",required = false)String user_agent) {
+        System.out.println(user_agent);
+    }
+
+    @RequestMapping("/quick18")
+    @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写
+    //API
+    public void save18(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
+        System.out.println(request);
+    }
+
+    @RequestMapping("/quick17")
+    @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写
+    public void save17(Date date)  {
+        System.out.println(date);
+    }
+
+    //localhost:80/quick16/...
+    @RequestMapping("/quick16/{name}")
+    @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写
+    //GET用于获取资源，POST用于新建资源，PUT用于更新资源，DELETE用于删除资源
+    public void save16(@PathVariable(value = "name") String username)  {
+        System.out.println(username);
+    }
+
+    @RequestMapping("/quick15")
+    @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写
+    //@RequestParam注解，value表示将请求参数与形参绑定，进行映射； required默认为true，作用是当没有输入参数时，页面不给通过； defaultValue，作用是当没有输入形参时，默认值为...
+    public void save15(@RequestParam(value = "name",required = false,defaultValue = "zxl") String username)  {
+        System.out.println(username);
+    }
 
     @RequestMapping("/quick14")
     @ResponseBody               //告知SpringMVC不要进行页面跳转，进行字符串回写

@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>Title</title>
-    <script src="${pageContext.request.contextPath}/js/jquery-3.3.1.js"/>
+    <script src="${pageContext.request.contextPath}/js/jquery-3.3.1.js"></script>
     <script>
         var userList = new Array();
         userList.push({username:"czt",age:22});
-        userList.push({username:"zxl",age:16});
+        userList.push({username:"sss",age:18});
 
         $.ajax({
             type:"POST",
