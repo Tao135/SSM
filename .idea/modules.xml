@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/itheima_spring_ioc_anno/itheima_spring_ioc_anno.iml" filepath="$PROJECT_DIR$/itheima_spring_ioc_anno/itheima_spring_ioc_anno.iml" />
       <module fileurl="file://$PROJECT_DIR$/itheima_spring_jdbc/itheima_spring_jdbc.iml" filepath="$PROJECT_DIR$/itheima_spring_jdbc/itheima_spring_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/itheima_spring_mvc/itheima_spring_mvc.iml" filepath="$PROJECT_DIR$/itheima_spring_mvc/itheima_spring_mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_test/itheima_spring_test.iml" filepath="$PROJECT_DIR$/itheima_spring_test/itheima_spring_test.iml" />
     </modules>
   </component>
 </project>
