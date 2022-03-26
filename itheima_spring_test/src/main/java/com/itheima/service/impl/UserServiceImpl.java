@@ -49,4 +49,13 @@ public class UserServiceImpl implements UserService {
         userDao.del(userId);
     }
 
+    public User login(String username, String password) {
+        try {
+            User user = userDao.findByUsernameAndPassword(username,password);
+            return user;
+        }catch (Exception e){
+            return null;
+        }
+    }
+
 }

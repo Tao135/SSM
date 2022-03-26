@@ -60,4 +60,9 @@ public class UserDaoImpl implements UserDao {
     public void del(Long userId) {
         jdbcTemplate.update("delete from sys_user where id=?",userId);
     }
+
+    public User findByUsernameAndPassword(String username, String password) throws Exception{
+        User user = jdbcTemplate.queryForObject("select * from sys_user where username=? and password=?", new BeanPropertyRowMapper<User>(User.class), username, password);
+        return user;
+    }
 }
