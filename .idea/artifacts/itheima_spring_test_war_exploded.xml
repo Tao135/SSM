@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="itheima_spring_test" />
+          <element id="module-output" name="itheima_spring_interceptor" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.16" />
@@ -40,7 +40,7 @@
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="itheima_spring_test/web/Web" />
+      <element id="javaee-facet-resources" facet="itheima_spring_interceptor/web/Web" />
     </root>
   </artifact>
 </component>

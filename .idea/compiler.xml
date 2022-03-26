@@ -6,15 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="itheima_spring" />
-        <module name="itheima_spring_jdbc" />
         <module name="itheima_spring_ioc_anno" />
+        <module name="itheima_spring" />
+        <module name="itheima_spring_interceptor" />
+        <module name="itheima_spring_jdbc" />
         <module name="itheima_spring_test" />
         <module name="itheima_spring_mvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="itheima_spring" target="1.5" />
+      <module name="itheima_spring_interceptor" target="1.5" />
       <module name="itheima_spring_ioc_anno" target="1.5" />
       <module name="itheima_spring_jdbc" target="1.5" />
       <module name="itheima_spring_mvc" target="1.5" />
