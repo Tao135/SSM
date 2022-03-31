@@ -13,10 +13,12 @@
         <module name="itheima_spring_exception" />
         <module name="itheima_spring_aop" />
         <module name="itheima_spring_test" />
+        <module name="itheima_mybatis_quick" />
         <module name="itheima_spring_mvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="itheima_mybatis_quick" target="1.5" />
       <module name="itheima_spring" target="1.5" />
       <module name="itheima_spring_aop" target="1.5" />
       <module name="itheima_spring_exception" target="1.5" />
