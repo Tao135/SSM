@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" " http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.itheima.dao.UserMapper">
+<mapper namespace="com.UserMapper">
 
     <!--删除操作，parameterType表示传入的形参参数类型-->
     <delete id="delete" parameterType="java.lang.Integer">
@@ -9,22 +9,22 @@
     </delete>
 
     <!--更新操作，parameterType表示传入的形参参数类型-->
-    <update id="update" parameterType="com.itheima.domain.User">
+    <update id="update" parameterType="com.User">
         update user set username=#{username},password=#{password} where id=#{id}
     </update>
 
     <!--插入操作，parameterType表示传入的形参参数类型-->
-    <insert id="save" parameterType="com.itheima.domain.User">
+    <insert id="save" parameterType="com.User">
         insert into user values(#{id},#{username},#{password})
     </insert>
 
     <!--resuleMap表示语句返回的类型-->
-    <select id="findAll" resultType="com.itheima.domain.User">
+    <select id="findAll" resultType="com.User">
         select * from user
     </select>
     
     <!--根据id查询-->
-    <select id="findById" resultType="com.itheima.domain.User" parameterType="int">
+    <select id="findById" resultType="com.User" parameterType="int">
         select * from user where id=#{id}
     </select>
     

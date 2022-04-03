@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/itheima_spring_aop/pom.xml" />
         <option value="$PROJECT_DIR$/itheima_mybatis_quick/pom.xml" />
         <option value="$PROJECT_DIR$/itheima_mybatis_dao/pom.xml" />
+        <option value="$PROJECT_DIR$/itheima_mybatis_mapper/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
