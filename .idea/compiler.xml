@@ -15,9 +15,11 @@
         <module name="itheima_spring_test" />
         <module name="itheima_mybatis_quick" />
         <module name="itheima_spring_mvc" />
+        <module name="itheima_mybatis_dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="itheima_mybatis_dao" target="1.5" />
       <module name="itheima_mybatis_quick" target="1.5" />
       <module name="itheima_spring" target="1.5" />
       <module name="itheima_spring_aop" target="1.5" />
