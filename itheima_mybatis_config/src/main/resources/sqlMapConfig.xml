@@ -8,8 +8,13 @@
 
     <!--起别名-->
     <typeAliases>
-        <typeAlias type="com.User" alias="user"></typeAlias>
+        <typeAlias type="com.itheima.domain.User" alias="user"></typeAlias>
     </typeAliases>
+
+    <!--注册类型处理器-->
+    <typeHandlers>
+        <typeHandler handler="com.itheima.handler.DateTypeHandler"/>
+    </typeHandlers>
 
     <!--数据源环境-->
     <environments default="development">
