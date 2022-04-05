@@ -1,6 +1,6 @@
 package com.itheima.service.impl;
 
-import com.itheima.dao.RoleDao;
+import com.itheima.mapper.RoleDao;
 import com.itheima.pojo.Role;
 import com.itheima.service.RoleService;
 

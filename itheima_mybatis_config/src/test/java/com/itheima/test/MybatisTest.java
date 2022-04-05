@@ -2,7 +2,7 @@ package com.itheima.test;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.itheima.dao.UserMapper;
+import com.itheima.mapper.UserMapper;
 import com.itheima.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

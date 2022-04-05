@@ -27,7 +27,7 @@
     </bean>
 
     <!--配置RoleDao-->
-    <bean id="roleDao" class="com.itheima.dao.impl.RoleDaoImpl">
+    <bean id="roleDao" class="com.itheima.mapper.impl.RoleDaoImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 
@@ -38,7 +38,7 @@
     </bean>
 
     <!--配置UserDao-->
-    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl">
+    <bean id="userDao" class="com.itheima.mapper.impl.UserDaoImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 

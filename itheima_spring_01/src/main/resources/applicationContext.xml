@@ -10,7 +10,7 @@
         init-method指bean初始化时将执行的方法
         destroy-method指当bean销毁时执行的方法
     -->
-    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl">
+    <bean id="userDao" class="com.itheima.mapper.impl.UserDaoImpl">
         <!--
             property中name
             ref是 对象注入

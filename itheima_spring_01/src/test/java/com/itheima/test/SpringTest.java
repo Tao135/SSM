@@ -1,8 +1,7 @@
 package com.itheima.test;
 
-import com.itheima.dao.UserDao;
+import com.itheima.mapper.UserDao;
 import org.junit.Test;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringTest {
