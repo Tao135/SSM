@@ -9,16 +9,17 @@
         <module name="itheima_spring_test" />
         <module name="itheima_mybatis_anno" />
         <module name="itheima_mybatis_quick" />
+        <module name="itheima_mybatis_mapper" />
         <module name="itheima_mybatis_dao" />
         <module name="itheima_spring_jdbc" />
         <module name="itheima_spring_aop" />
-        <module name="itheima_mybatis_config" />
         <module name="itheima_spring" />
-        <module name="itheima_mybatis_mapper" />
+        <module name="itheima_mybatis_config" />
         <module name="itheima_spring_interceptor" />
         <module name="itheima_spring_mvc" />
         <module name="itheima_spring_exception" />
         <module name="itheima_spring_ioc_anno" />
+        <module name="itheima_ssm" />
         <module name="itheima_mybatis_multi" />
       </profile>
     </annotationProcessing>
@@ -37,6 +38,7 @@
       <module name="itheima_spring_jdbc" target="1.5" />
       <module name="itheima_spring_mvc" target="1.5" />
       <module name="itheima_spring_test" target="1.5" />
+      <module name="itheima_ssm" target="1.5" />
       <module name="mvc" target="1.5" />
     </bytecodeTargetLevel>
   </component>
